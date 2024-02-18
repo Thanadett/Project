@@ -2,23 +2,9 @@
 #include <vector>
 #include <string>
 #include <msclr/marshal_cppstd.h>
-#include <fstream>
+#include "search.h"
 
 namespace Project1 {
-	struct Medicine
-	{
-		std::string name;
-		std::string indication;
-		std::string dosage;
-		std::string frequency;
-	};
-
-	std::vector<Medicine> medicineDatabase = {
-		{"Paracetamol", "ลดไข้และแก้ปวด", "1-2 เม็ด", "ทุก 4-6 ชั่วโมง"},
-		{"Ibuprofen", "ลดอาการปวดและลดการอักเสบ", "200-400 มก.", "ทุก 4-6 ชั่วโมง"},
-		{"Cetirizine", "บรรเทาอาการแพ้", "10 มก.", "ทุก 24 ชั่วโมง"},
-		// เพิ่มยาต่อไปตามต้องการ
-	};
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -35,18 +21,6 @@ namespace Project1 {
 	{
 	private:
 		MainForm^ mainFormInstance;
-
-		// ฟังก์ชันที่ตรวจสอบคำที่ตรงกับ medicineDatabase
-		std::vector<Medicine> findMatchingMedicines(const std::string& userIndication)
-		{
-			std::vector<Medicine> matchingMedicines;
-			for (const Medicine& med : medicineDatabase) {
-				if (med.indication.find(userIndication) != std::string::npos) {
-					matchingMedicines.push_back(med);
-				}
-			}
-			return matchingMedicines;
-		}
 
 	public:
 		MainForm(void)
@@ -85,7 +59,7 @@ namespace Project1 {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -115,9 +89,9 @@ namespace Project1 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(537, 379);
+			this->button1->Location = System::Drawing::Point(518, 390);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->Size = System::Drawing::Size(105, 35);
 			this->button1->TabIndex = 2;
 			this->button1->Text = L"Search";
 			this->button1->UseVisualStyleBackColor = true;
@@ -180,26 +154,28 @@ namespace Project1 {
 		}
 #pragma endregion
 	private: System::Void MainForm_Load(System::Object^ sender, System::EventArgs^ e) {
-    }
+	}
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void label1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		// ข้อมูลที่ผู้ใช้ป้อนเข้ามา
-		std::string userIndication = msclr::interop::marshal_as<std::string>(textBox1->Text);
+		std::string userIndication = msclr::interop::marshal_as<std::string>(textBox1->Text); \
 
+		// เรียกใช้ฟังก์ชั่น input data จากไฟล์ data.txt	
+		std::vector<Medicine> file = loadFile("data.txt");
 		// ค้นหายาที่ตรงกับอาการ
-		std::vector<Medicine> matchingMedicines = findMatchingMedicines(userIndication);
+		std::vector<Medicine> matchingMed = findMed(userIndication, file);
 
 		// แสดงผลลัพธ์ใน MessageBox
-		if (!matchingMedicines.empty()) {
+		if (!matchingMed.empty()) {
 			std::string result = "พบยาที่ตรงกับอาการ:\n\n";
-			for (const Medicine& med : matchingMedicines) {
+			for (const Medicine& med : matchingMed) {
 				result += "ชื่อยา: " + med.name + "\n";
 				result += "ใช้สำหรับ: " + med.indication + "\n";
 				result += "ขนาดยา: " + med.dosage + "\n";
-				result += "ประเภท: " + med.frequency + "\n\n";
+				result += "ประเภท: " + med.time + "\n\n";
 			}
 			MessageBox::Show(gcnew System::String(result.c_str()), "ผลลัพธ์", MessageBoxButtons::OK);
 		}
@@ -208,8 +184,8 @@ namespace Project1 {
 		}
 	}
 	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	}		
+	}
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-};
+	};
 }
