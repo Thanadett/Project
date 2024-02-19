@@ -1,21 +1,15 @@
-#ifndef PERIOD_COUNT_H
-#define PERIOD_COUNT_H
+#include "menstrual_cycle.h"
 
-#include <stdio.h>
-
-// Function to count the number of periods in a string
-int count_periods(const char str)
+// Function to count menstrual cycle basics
+MenstrualCycle countMenstrualCycleBasics(int last_period_start_day, int current_day)
 {
-    int count = 0;
-    while (str != '\0')
-    {
-        if (*str == '.')
-        {
-            count++;
-        }
-        str++;
-    }
-    return count;
-}
+    MenstrualCycle cycle;
 
-#endif // PERIOD_COUNT_H
+    // Calculate the length of the cycle by subtracting the start day of the last period from the current day
+    cycle.cycle_length = current_day - last_period_start_day;
+
+    // Assume a typical menstrual period length of 5 days
+    cycle.period_length = 5;
+
+    return cycle;
+}
