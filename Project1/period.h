@@ -1,33 +1,58 @@
 #include <iostream>
 using namespace std;
 
-void displayCalendar(int year, int month)
+int months(int year, int month)
 {
-    int daysInMonth;
-    if (month == 1 && month == 3 && month == 5 && month == 7 && month == 9 && month == 11)
+    if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
     {
-        daysInMonth = 31;
+        return 31;
     }
-    if (month == 4 && month == 6 && month == 8 && month == 10)
+    if (month == 4 || month == 6 || month == 9 || month == 11)
     {
-        daysInMonth = 30;
+        return 30;
     }
     if (month == 2)
     {
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
-            daysInMonth = 29;
+            return 29;
         else
-            daysInMonth = 28;
+            return 28;
     }
     else
     {
         cout << "Invalid month\n";
+        return 0;
     }
-    return;
 }
 
-void thatday(int day)
+void thatdays(int day, int month, int year, int &thatday, int &thatmonth, int &thatyear)
 {
-    cout << "today: ";
-    cin >> day;
+    if (thatday < months(year, month))
+    {
+        thatday = day + 28;
+        thatmonth = month;
+        thatyear = year;
+    }
+    if (thatday > months(year, month) && month != 12)
+    {
+        thatday = abs((months(year, month) - thatday));
+        thatmonth = month++;
+        thatyear = year;
+    }
+    if (thatday > months(year, month) && month == 12)
+    {
+        thatday = abs((months(year, month) - thatday));
+        thatmonth = 1;
+        thatyear = year + 1;
+    }
+}
+
+int main()
+{
+    int thatmonth = 0;
+    int thatyear = 0;
+    int thatday = 0;
+    cout << thatday << " " << thatmonth << " " << thatyear << endl;
+    thatdays(11, 12, 2023, thatday, thatmonth, thatyear);
+    cout << thatday << " " << thatmonth << " " << thatyear;
 }
