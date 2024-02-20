@@ -46,13 +46,3 @@ void thatdays(int day, int month, int year, int &thatday, int &thatmonth, int &t
         thatyear = year + 1;
     }
 }
-
-int main()
-{
-    int thatmonth = 0;
-    int thatyear = 0;
-    int thatday = 0;
-    cout << thatday << " " << thatmonth << " " << thatyear << endl;
-    thatdays(11, 12, 2023, thatday, thatmonth, thatyear);
-    cout << thatday << " " << thatmonth << " " << thatyear;
-}
