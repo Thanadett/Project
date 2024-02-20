@@ -1,5 +1,9 @@
 ﻿#pragma once
 #include "MainForm.h"
+#include "MainBmi.h"
+#include "MainPeriod.h"
+#include "MainTest.h"
+#include "MainCal.h"
 
 namespace Project1 {
 
@@ -48,7 +52,7 @@ namespace Project1 {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -112,6 +116,7 @@ namespace Project1 {
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"Period";
 			this->button4->UseVisualStyleBackColor = false;
+			this->button4->Click += gcnew System::EventHandler(this, &MainApp::button4_Click_1);
 			// 
 			// button5
 			// 
@@ -122,6 +127,7 @@ namespace Project1 {
 			this->button5->TabIndex = 4;
 			this->button5->Text = L"Calories";
 			this->button5->UseVisualStyleBackColor = false;
+			this->button5->Click += gcnew System::EventHandler(this, &MainApp::button5_Click);
 			// 
 			// button6
 			// 
@@ -132,6 +138,7 @@ namespace Project1 {
 			this->button6->TabIndex = 5;
 			this->button6->Text = L"Drepression Test";
 			this->button6->UseVisualStyleBackColor = false;
+			this->button6->Click += gcnew System::EventHandler(this, &MainApp::button6_Click);
 			// 
 			// MainApp
 			// 
@@ -152,7 +159,6 @@ namespace Project1 {
 			this->Text = L"MainApp";
 			this->Load += gcnew System::EventHandler(this, &MainApp::MainApp_Load);
 			this->ResumeLayout(false);
-			this->StartPosition = FormStartPosition::CenterScreen;
 
 		}
 #pragma endregion
@@ -164,10 +170,24 @@ namespace Project1 {
 		Application::Exit();
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+		MainBmi^ Bmi = gcnew MainBmi();
+		Bmi->Show();
 	}
 	private: System::Void MainApp_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void button4_Click_1(System::Object^ sender, System::EventArgs^ e) {
+		MainPeriod^ Period = gcnew MainPeriod();
+		Period->Show();
 	}
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		MainCal^ Cal = gcnew MainCal();
+		Cal->Show();
+	}
+	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+		MainTest^ Test = gcnew MainTest();
+		Test->Show();
+	}
+};
+}

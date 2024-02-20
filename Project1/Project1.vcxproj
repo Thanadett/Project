@@ -130,6 +130,18 @@
     <ClInclude Include="MainApp.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MainBmi.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainCal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainPeriod.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainTest.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="period.h" />
     <ClInclude Include="Result.h" />
     <ClInclude Include="search.h" />
@@ -140,6 +152,12 @@
   <ItemGroup>
     <EmbeddedResource Include="MainApp.resx">
       <DependentUpon>MainApp.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainBmi.resx">
+      <DependentUpon>MainBmi.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainCal.resx">
+      <DependentUpon>MainCal.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>

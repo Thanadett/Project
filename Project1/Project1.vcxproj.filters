@@ -23,19 +23,31 @@
     <ClInclude Include="MainForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="search.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Result.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="period.h">
+    <ClInclude Include="MainApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BMI.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="period.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="search.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainBmi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MainApp.h">
+    <ClInclude Include="MainPeriod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainCal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
