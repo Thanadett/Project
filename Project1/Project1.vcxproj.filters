@@ -29,6 +29,9 @@
     <ClInclude Include="Result.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="period.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data.txt">
