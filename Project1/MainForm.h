@@ -4,6 +4,7 @@
 #include <msclr/marshal_cppstd.h>
 #include "search.h"
 #include "Result.h"
+#include "MainApp.h"
 
 namespace Project1 {
 
