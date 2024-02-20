@@ -1,4 +1,6 @@
 ﻿#pragma once
+#include "MainApp.h"
+#include "MainForm.h" 
 
 namespace Project1 {
 
@@ -34,6 +36,8 @@ namespace Project1 {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Button^ button1;
+	protected:
 
 	private:
 		/// <summary>
@@ -48,12 +52,34 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"MainApp";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(55, 56);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(250, 339);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"Search Medicine";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MainApp::button1_Click);
+			// 
+			// MainApp
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(1182, 603);
+			this->Controls->Add(this->button1);
+			this->Name = L"MainApp";
+			this->Text = L"MainApp";
+			this->ResumeLayout(false);
+
 		}
 #pragma endregion
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		MainForm^ mainForm = gcnew MainForm();
+		mainForm->Show();
+	}
 	};
 }
