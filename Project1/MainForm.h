@@ -4,6 +4,7 @@
 #include <msclr/marshal_cppstd.h>
 #include "search.h"
 #include "Result.h"
+#include "BMI.h"
 
 namespace Project1 {
 
@@ -47,6 +48,12 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button3;
+
+
+
 
 
 
@@ -75,13 +82,16 @@ namespace Project1 {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// headtx
 			// 
 			this->headtx->AutoSize = true;
 			this->headtx->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24));
-			this->headtx->Location = System::Drawing::Point(379, 121);
+			this->headtx->Location = System::Drawing::Point(397, 127);
 			this->headtx->Name = L"headtx";
 			this->headtx->Size = System::Drawing::Size(393, 46);
 			this->headtx->TabIndex = 1;
@@ -90,7 +100,7 @@ namespace Project1 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(518, 390);
+			this->button1->Location = System::Drawing::Point(344, 382);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(105, 35);
 			this->button1->TabIndex = 2;
@@ -102,7 +112,7 @@ namespace Project1 {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->label1->Location = System::Drawing::Point(239, 215);
+			this->label1->Location = System::Drawing::Point(263, 206);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(713, 31);
 			this->label1->TabIndex = 3;
@@ -112,7 +122,7 @@ namespace Project1 {
 			// textBox1
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox1->Location = System::Drawing::Point(340, 305);
+			this->textBox1->Location = System::Drawing::Point(353, 286);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(476, 38);
 			this->textBox1->TabIndex = 4;
@@ -128,6 +138,34 @@ namespace Project1 {
 			this->label2->Text = L" ";
 			this->label2->Click += gcnew System::EventHandler(this, &MainForm::label2_Click);
 			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(800, 380);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(92, 37);
+			this->button4->TabIndex = 8;
+			this->button4->Text = L"แบบทดสอบ";
+			this->button4->UseVisualStyleBackColor = true;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(172, 379);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(92, 37);
+			this->button2->TabIndex = 6;
+			this->button2->Text = L"BMI";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MainForm::button2_Click);
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(634, 381);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(92, 37);
+			this->button3->TabIndex = 7;
+			this->button3->Text = L"รอบเดือน";
+			this->button3->UseVisualStyleBackColor = true;
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -135,6 +173,9 @@ namespace Project1 {
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1175, 617);
+			this->Controls->Add(this->button4);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label1);
@@ -153,10 +194,6 @@ namespace Project1 {
 			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
-			//
-		    // start sc
-		    //
-			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 
 		}
 #pragma endregion
@@ -195,5 +232,7 @@ namespace Project1 {
 	}
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 }
