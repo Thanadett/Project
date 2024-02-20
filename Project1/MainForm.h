@@ -47,15 +47,7 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Label^ label2;
-
-
-
-
-
-
-
-
-
+	private: System::Windows::Forms::Button^ button2;
 
 	protected:
 
@@ -81,6 +73,7 @@ namespace Project1 {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// headtx
@@ -133,6 +126,16 @@ namespace Project1 {
 			this->label2->TabIndex = 5;
 			this->label2->Click += gcnew System::EventHandler(this, &MainForm::label2_Click);
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(31, 524);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(93, 40);
+			this->button2->TabIndex = 6;
+			this->button2->Text = L"Back";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MainForm::button2_Click_1);
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -140,6 +143,7 @@ namespace Project1 {
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1182, 603);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label1);
@@ -196,7 +200,10 @@ namespace Project1 {
 	}
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void button2_Click_1(System::Object^ sender, System::EventArgs^ e) {
+		Project1::MainApp^ mainApp = gcnew Project1::MainApp();
+		mainApp->Show();
+		this->Close();
 	}
-};
-}
+	};
+	}
