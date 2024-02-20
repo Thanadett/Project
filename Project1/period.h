@@ -1,15 +1,30 @@
-#include "menstrual_cycle.h"
+#include <iostream>
+using namespace std;
 
-// Function to count menstrual cycle basics
-MenstrualCycle countMenstrualCycleBasics(int last_period_start_day, int current_day)
+void displayCalendar(int year, int month)
 {
-    MenstrualCycle cycle;
-
-    // Calculate the length of the cycle by subtracting the start day of the last period from the current day
-    cycle.cycle_length = current_day - last_period_start_day;
-
-    // Assume a typical menstrual period length of 5 days
-    cycle.period_length = 5;
-
-    return cycle;
+    int daysInMonth;
+    for (int i = 0; i < 12; i++)
+    {
+        if (i == 1 && i == 3 && i == 5 && i == 7 && i == 9 && i == 11)
+        {
+            daysInMonth = 31;
+        }
+        if (i == 4 && i == 6 && i == 8 && i == 10)
+        {
+            daysInMonth = 30;
+        }
+        if (i == 2)
+        {
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+                daysInMonth = 29;
+            else
+                daysInMonth = 28;
+        }
+        else
+        {
+            cout << "Invalid month\n";
+        }
+        return;
+    }
 }
