@@ -133,7 +133,7 @@ namespace Project1 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(1178, 617);
+			this->ClientSize = System::Drawing::Size(1175, 617);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label1);
@@ -142,8 +142,10 @@ namespace Project1 {
 			this->Cursor = System::Windows::Forms::Cursors::Arrow;
 			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8));
 			this->ForeColor = System::Drawing::Color::Black;
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(3, 4, 3, 4);
+			this->MaximizeBox = false;
 			this->Name = L"MainForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Medicine Emergency";
@@ -175,7 +177,7 @@ namespace Project1 {
 				result += "ชื่อยา: " + med.name + "\n";
 				result += "ใช้สำหรับ: " + med.indication + "\n";
 				result += "ขนาดยา: " + med.dosage + "\n";
-				result += "ประเภท: " + med.time + "\n\n";
+				result += "ความถี่: " + med.time + "\n\n";
 			}
 			MessageBox::Show(gcnew System::String(result.c_str()), "ผลลัพธ์", MessageBoxButtons::OK);
 		}
