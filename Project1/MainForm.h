@@ -3,6 +3,7 @@
 #include <string>
 #include <msclr/marshal_cppstd.h>
 #include "search.h"
+#include "Result.h"
 
 namespace Project1 {
 
@@ -152,6 +153,10 @@ namespace Project1 {
 			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
+			//
+		    // start sc
+		    //
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 
 		}
 #pragma endregion
@@ -179,7 +184,8 @@ namespace Project1 {
 				result += "ขนาดยา: " + med.dosage + "\n";
 				result += "ความถี่: " + med.time + "\n\n";
 			}
-			MessageBox::Show(gcnew System::String(result.c_str()), "ผลลัพธ์", MessageBoxButtons::OK);
+			ResultForm^ resultForm = gcnew ResultForm(gcnew System::String(result.c_str()));
+			resultForm->Show();
 		}
 		else {
 			MessageBox::Show("ไม่พบยาที่ตรงกับอาการ", "ผลลัพธ์", MessageBoxButtons::OK);
