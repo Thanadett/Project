@@ -201,8 +201,8 @@ namespace Project1 {
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void button2_Click_1(System::Object^ sender, System::EventArgs^ e) {
-		Project1::MainApp^ mainApp = gcnew Project1::MainApp();
-		mainApp->Show();
+		//Project1::MainApp^ mainApp = gcnew Project1::MainApp();
+		//mainApp->Show();
 		this->Close();
 	}
 	};

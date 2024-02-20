@@ -1,6 +1,5 @@
 ﻿#pragma once
-#include "MainApp.h"
-#include "MainForm.h" 
+#include "MainForm.h"
 
 namespace Project1 {
 
