@@ -4,7 +4,6 @@
 #include <msclr/marshal_cppstd.h>
 #include "search.h"
 #include "Result.h"
-#include "BMI.h"
 
 namespace Project1 {
 
