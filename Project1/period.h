@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 int months(int year, int month)
 {
@@ -20,7 +19,7 @@ int months(int year, int month)
     }
     else
     {
-        cout << "Invalid month\n";
+        std::cout << "Invalid month\n";
         return 0;
     }
 }

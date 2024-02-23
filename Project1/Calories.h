@@ -2,11 +2,9 @@
 #pragma once
 
 class CaloriesCalculator {
-private:
     double carbs;
     double protein;
     double fat;
-
 public:
     CaloriesCalculator(double _carbs, double _protein, double _fat)
         : carbs(_carbs), protein(_protein), fat(_fat) {}
