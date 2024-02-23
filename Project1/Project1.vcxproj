@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BMI.h" />
+    <ClInclude Include="Calories.h" />
     <ClInclude Include="MainApp.h">
       <FileType>CppForm</FileType>
     </ClInclude>

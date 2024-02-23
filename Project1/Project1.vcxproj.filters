@@ -50,6 +50,9 @@
     <ClInclude Include="MainCal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Calories.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data.txt">

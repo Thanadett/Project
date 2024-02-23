@@ -129,7 +129,7 @@ namespace Project1 {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(31, 524);
+			this->button2->Location = System::Drawing::Point(36, 529);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(93, 40);
 			this->button2->TabIndex = 6;
@@ -143,7 +143,7 @@ namespace Project1 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(1182, 603);
+			this->ClientSize = System::Drawing::Size(1200, 600);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->textBox1);
@@ -153,7 +153,7 @@ namespace Project1 {
 			this->Cursor = System::Windows::Forms::Cursors::Arrow;
 			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8));
 			this->ForeColor = System::Drawing::Color::Black;
-			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(3, 4, 3, 4);
 			this->MaximizeBox = false;
