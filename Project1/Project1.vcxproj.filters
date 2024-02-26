@@ -53,6 +53,9 @@
     <ClInclude Include="Calories.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
+    <ClInclude Include="Healt_test.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data.txt">

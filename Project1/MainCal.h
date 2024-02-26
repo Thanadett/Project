@@ -75,14 +75,14 @@ namespace Project1 {
 			// textBox1
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox1->Location = System::Drawing::Point(173, 201);
+			this->textBox1->Location = System::Drawing::Point(172, 265);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(190, 38);
 			this->textBox1->TabIndex = 0;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(34, 482);
+			this->button2->Location = System::Drawing::Point(27, 552);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(93, 40);
 			this->button2->TabIndex = 7;
@@ -94,7 +94,7 @@ namespace Project1 {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->label1->Location = System::Drawing::Point(205, 138);
+			this->label1->Location = System::Drawing::Point(204, 204);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(125, 31);
 			this->label1->TabIndex = 8;
@@ -103,7 +103,7 @@ namespace Project1 {
 			// textBox2
 			// 
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox2->Location = System::Drawing::Point(495, 201);
+			this->textBox2->Location = System::Drawing::Point(516, 265);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(190, 38);
 			this->textBox2->TabIndex = 9;
@@ -111,7 +111,7 @@ namespace Project1 {
 			// textBox3
 			// 
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox3->Location = System::Drawing::Point(803, 201);
+			this->textBox3->Location = System::Drawing::Point(840, 265);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(190, 38);
 			this->textBox3->TabIndex = 10;
@@ -120,7 +120,7 @@ namespace Project1 {
 			// 
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->label2->Location = System::Drawing::Point(510, 138);
+			this->label2->Location = System::Drawing::Point(530, 204);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(155, 31);
 			this->label2->TabIndex = 11;
@@ -130,7 +130,7 @@ namespace Project1 {
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->label3->Location = System::Drawing::Point(834, 138);
+			this->label3->Location = System::Drawing::Point(859, 204);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(144, 31);
 			this->label3->TabIndex = 12;
@@ -140,7 +140,7 @@ namespace Project1 {
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14));
-			this->button1->Location = System::Drawing::Point(511, 378);
+			this->button1->Location = System::Drawing::Point(531, 447);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(154, 63);
 			this->button1->TabIndex = 13;
@@ -152,7 +152,7 @@ namespace Project1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1182, 553);
+			this->ClientSize = System::Drawing::Size(1223, 629);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);

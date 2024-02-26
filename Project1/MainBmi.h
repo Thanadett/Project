@@ -164,7 +164,7 @@ namespace Project1 {
 				static_cast<System::Byte>(0)));
 			this->button3->Location = System::Drawing::Point(660, 362);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(143, 54);
+				this->button3->Size = System::Drawing::Size(143, 54);
 			this->button3->TabIndex = 12;
 			this->button3->Text = L"ประวัติ";
 			this->button3->UseVisualStyleBackColor = true;

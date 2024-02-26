@@ -128,6 +128,7 @@
   <ItemGroup>
     <ClInclude Include="BMI.h" />
     <ClInclude Include="Calories.h" />
+    <ClInclude Include="Healt_test.h" />
     <ClInclude Include="MainApp.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -162,6 +163,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPeriod.resx">
+      <DependentUpon>MainPeriod.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainTest.resx">
+      <DependentUpon>MainTest.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

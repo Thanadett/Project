@@ -26,22 +26,20 @@ int months(int year, int month)
 
 void thatdays(int day, int month, int year, int& thatday, int& thatmonth, int& thatyear)
 {
-    if (thatday < months(year, month))
+    thatday = day + 28;
+    thatmonth = month;
+    thatyear = year;
+
+    int daysInMonth = months(year, month);
+    while (thatday > daysInMonth)
     {
-        thatday = day + 28;
-        thatmonth = month;
-        thatyear = year;
-    }
-    if (thatday > months(year, month) && month != 12)
-    {
-        thatday = abs((months(year, month) - thatday));
-        thatmonth = month++;
-        thatyear = year;
-    }
-    if (thatday > months(year, month) && month == 12)
-    {
-        thatday = abs((months(year, month) - thatday));
-        thatmonth = 1;
-        thatyear = year + 1;
+        thatday -= daysInMonth;
+        ++thatmonth;
+        if (thatmonth > 12)
+        {
+            thatmonth = 1;
+            ++thatyear;
+        }
+        daysInMonth = months(thatyear, thatmonth);
     }
 }
