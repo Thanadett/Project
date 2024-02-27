@@ -1,5 +1,4 @@
 ﻿#pragma once
-#include "Healt_test.h"
 
 namespace Project1 {
 
@@ -73,6 +72,14 @@ namespace Project1 {
 	private: System::Windows::Forms::CheckBox^ checkBox30;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::Label^ label9;
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::Label^ label13;
+	private: System::Windows::Forms::Label^ label14;
 	protected:
 
 	private:
@@ -126,6 +133,14 @@ namespace Project1 {
 			this->checkBox30 = (gcnew System::Windows::Forms::CheckBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -490,7 +505,7 @@ namespace Project1 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(924, 572);
+			this->button1->Location = System::Drawing::Point(814, 572);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(98, 39);
 			this->button1->TabIndex = 36;
@@ -500,7 +515,7 @@ namespace Project1 {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(1084, 572);
+			this->button2->Location = System::Drawing::Point(1039, 572);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(98, 39);
 			this->button2->TabIndex = 37;
@@ -508,11 +523,101 @@ namespace Project1 {
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MainTest::button2_Click);
 			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->label7->Location = System::Drawing::Point(809, 138);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(88, 25);
+			this->label7->TabIndex = 38;
+			this->label7->Text = L"การแปลผล";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->label8->Location = System::Drawing::Point(809, 191);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(222, 25);
+			this->label8->TabIndex = 39;
+			this->label8->Text = L"คะแนน 0-4 ความเครียดน้อย";
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->label9->Location = System::Drawing::Point(809, 235);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(256, 25);
+			this->label9->TabIndex = 40;
+			this->label9->Text = L"คะแนน 5-7 ความเครียดปานกลาง";
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->label10->Location = System::Drawing::Point(809, 280);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(219, 25);
+			this->label10->TabIndex = 41;
+			this->label10->Text = L"คะแนน 8-9 ความเครียดมาก";
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->label11->Location = System::Drawing::Point(809, 322);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(273, 25);
+			this->label11->TabIndex = 42;
+			this->label11->Text = L"คะแนน 10-15 ความเครียดมากที่สุด";
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->label12->Location = System::Drawing::Point(809, 372);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(300, 25);
+			this->label12->TabIndex = 43;
+			this->label12->Text = L"อ้างอิง กรมสุขภาพจิต กระทรวงสาธารณสุข";
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->label13->Location = System::Drawing::Point(809, 420);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(95, 25);
+			this->label13->TabIndex = 44;
+			this->label13->Text = L"คำแนะนำ :";
+			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
+			this->label14->Location = System::Drawing::Point(810, 462);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(351, 80);
+			this->label14->TabIndex = 45;
+			this->label14->Text = L"หากทำแบบทดสอบแล้วพบว่ามีระดับความเครียดสูง\r\nไม่มั่นใจระดับความเครียดของตัวเอง \r\nอ"
+				L"ยากหาทางจัดการและรับมือกับความคิดของตัวเอง \r\nปรึกษาจิตแพทย์หรือนักจิตวิทยาคลินิก"
+				L"";
+			// 
 			// MainTest
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1205, 647);
+			this->Controls->Add(this->label14);
+			this->Controls->Add(this->label13);
+			this->Controls->Add(this->label12);
+			this->Controls->Add(this->label11);
+			this->Controls->Add(this->label10);
+			this->Controls->Add(this->label9);
+			this->Controls->Add(this->label8);
+			this->Controls->Add(this->label7);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->checkBox28);
@@ -561,51 +666,63 @@ namespace Project1 {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		// กำหนดค่าให้กับตัวแปร score0
-		int score0 = checkBox1->Checked ? 0 : 0;
-		score0 += checkBox7->Checked ? 0 : 0;
-		score0 += checkBox9->Checked ? 0 : 0;
-		score0 += checkBox10->Checked ? 0 : 0;
-		score0 += checkBox11->Checked ? 0 : 0;
+		int score = 0;
 
-		// กำหนดค่าให้กับตัวแปร score1
-		int score1 = checkBox2->Checked ? 1 : 0;
-		score1 += checkBox8->Checked ? 1 : 0;
-		score1 += checkBox12->Checked ? 1 : 0;
-		score1 += checkBox13->Checked ? 1 : 0;
-		score1 += checkBox14->Checked ? 1 : 0;
+		if (checkBox1->Checked) score += 0;
+		if (checkBox7->Checked) score += 0;
+		if (checkBox9->Checked) score += 0;
+		if (checkBox10->Checked) score += 0;
+		if (checkBox11->Checked) score += 0;
 
-		// กำหนดค่าให้กับตัวแปร score2
-		int score2 = checkBox3->Checked ? 2 : 0;
-		score2 += checkBox15->Checked ? 2 : 0;
-		score2 += checkBox16->Checked ? 2 : 0;
-		score2 += checkBox17->Checked ? 2 : 0;
-		score2 += checkBox18->Checked ? 2 : 0;
+		if (checkBox2->Checked) score += 1;
+		if (checkBox8->Checked) score += 1;
+		if (checkBox12->Checked) score += 1;
+		if (checkBox13->Checked) score += 1;
+		if (checkBox14->Checked) score += 1;
 
-		// กำหนดค่าให้กับตัวแปร score3
-		int score3 = checkBox21->Checked ? 3 : 0;
-		score3 += checkBox24->Checked ? 3 : 0;
-		score3 += checkBox27->Checked ? 3 : 0;
-		score3 += checkBox30->Checked ? 3 : 0;
+		if (checkBox3->Checked) score += 2;
+		if (checkBox15->Checked) score += 2;
+		if (checkBox16->Checked) score += 2;
+		if (checkBox17->Checked) score += 2;
+		if (checkBox18->Checked) score += 2;
 
-		// กำหนดค่าให้กับตัวแปร score4
-		int score4 = checkBox20->Checked ? 4 : 0;
-		score4 += checkBox23->Checked ? 4 : 0;
-		score4 += checkBox26->Checked ? 4 : 0;
-		score4 += checkBox29->Checked ? 4 : 0;
+		if (checkBox4->Checked) score += 3;
+		if (checkBox21->Checked) score += 3;
+		if (checkBox24->Checked) score += 3;
+		if (checkBox27->Checked) score += 3;
+		if (checkBox30->Checked) score += 3;
 
-		// กำหนดค่าให้กับตัวแปร score5
-		int score5 = checkBox19->Checked ? 5 : 0;
-		score5 += checkBox22->Checked ? 5 : 0;
-		score5 += checkBox25->Checked ? 5 : 0;
-		score5 += checkBox28->Checked ? 5 : 0;
+		if (checkBox5->Checked) score += 4;
+		if (checkBox20->Checked) score += 4;
+		if (checkBox23->Checked) score += 4;
+		if (checkBox26->Checked) score += 4;
+		if (checkBox29->Checked) score += 4;
 
-		// เรียกใช้ฟังก์ชัน calculateMentalHealthScore
-		int totalScore = calculateMentalHealthScore(score0, score1, score2, score3, score4, score5);
+		if (checkBox6->Checked) score += 5;
+		if (checkBox19->Checked) score += 5;
+		if (checkBox22->Checked) score += 5;
+		if (checkBox25->Checked) score += 5;
+		if (checkBox28->Checked) score += 5;
 
-		// แสดงผลลัพธ์หรือทำการประมวลผลต่อไปตามต้องการ
-		// ตัวอย่าง: แสดงผลลัพธ์ทาง UI
-		MessageBox::Show("Total Score: " + totalScore.ToString());
+		String^ resultMessage = "คะแนนทั้งหมด: " + score + "\n";
+
+		// แสดงผลลัพธ์ใน MessageBox ตามคะแนน
+		if (score >= 0 && score <= 4) {
+			resultMessage += "ความเครียด: น้อย";
+		}
+		else if (score >= 5 && score <= 7) {
+			resultMessage += "ความเครียด: ปานกลาง";
+		}
+		else if (score >= 8 && score <= 9) {
+			resultMessage += "ความเครียด: มาก";
+		}
+		else if (score >= 10 && score <= 15) {
+			resultMessage += "ความเครียด: มากที่สุด";
+		}
+
+		// แสดง MessageBox
+		MessageBox::Show(resultMessage, "ผลการทดสอบ");
+
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();

@@ -23,9 +23,6 @@ namespace Project1 {
 		MainApp(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: Add the constructor code here
-			//
 		}
 
 	protected:
@@ -45,6 +42,8 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Button^ button5;
 	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Timers::Timer^ timer;
 
 	protected:
 
@@ -68,6 +67,7 @@ namespace Project1 {
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -140,6 +140,17 @@ namespace Project1 {
 			this->button6->UseVisualStyleBackColor = false;
 			this->button6->Click += gcnew System::EventHandler(this, &MainApp::button6_Click);
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
+			this->label1->Location = System::Drawing::Point(808, 248);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(42, 20);
+			this->label1->TabIndex = 6;
+			this->label1->Text = L"Tip :";
+			this->label1->Click += gcnew System::EventHandler(this, &MainApp::label1_Click);
+			// 
 			// MainApp
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -147,6 +158,7 @@ namespace Project1 {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1200, 600);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
@@ -160,6 +172,7 @@ namespace Project1 {
 			this->Text = L"MainApp";
 			this->Load += gcnew System::EventHandler(this, &MainApp::MainApp_Load);
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
@@ -190,5 +203,7 @@ namespace Project1 {
 		MainTest^ Test = gcnew MainTest();
 		Test->Show();
 	}
+	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
