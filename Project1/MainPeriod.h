@@ -147,7 +147,7 @@ namespace Project1 {
 		System::String^ resultMessage = "จำนวนวันในเดือนที่กำหนด: " + daysInMonth + "\n";
 		resultMessage += "วันที่ที่รอบเดือนจะมาตามกำหนดคือ : " + thatday + "/" + thatmonth + "/" + thatyear;
 
-		MessageBox::Show(resultMessage, "ผลลัพธ์", MessageBoxButtons::OK, MessageBoxIcon::Information);
+		MessageBox::Show(resultMessage, "ผลลัพธ์", MessageBoxButtons::OK);
 }
 };
 }
