@@ -67,7 +67,7 @@ namespace Project1 {
 			// textBox1
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox1->Location = System::Drawing::Point(434, 340);
+			this->textBox1->Location = System::Drawing::Point(594, 425);
 			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(123, 32);
@@ -76,7 +76,7 @@ namespace Project1 {
 			// textBox2
 			// 
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox2->Location = System::Drawing::Point(615, 340);
+			this->textBox2->Location = System::Drawing::Point(841, 425);
 			this->textBox2->Margin = System::Windows::Forms::Padding(2);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(132, 32);
@@ -85,7 +85,7 @@ namespace Project1 {
 			// textBox3
 			// 
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox3->Location = System::Drawing::Point(788, 340);
+			this->textBox3->Location = System::Drawing::Point(1067, 425);
 			this->textBox3->Margin = System::Windows::Forms::Padding(2);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(165, 32);
@@ -93,7 +93,7 @@ namespace Project1 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(626, 474);
+			this->button1->Location = System::Drawing::Point(855, 562);
 			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(104, 48);
@@ -106,10 +106,10 @@ namespace Project1 {
 			// 
 			this->button2->BackColor = System::Drawing::Color::White;
 			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
-			this->button2->Location = System::Drawing::Point(935, 587);
+			this->button2->Location = System::Drawing::Point(1249, 720);
 			this->button2->Margin = System::Windows::Forms::Padding(2);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(79, 47);
+			this->button2->Size = System::Drawing::Size(111, 72);
 			this->button2->TabIndex = 4;
 			this->button2->Text = L"Back";
 			this->button2->UseVisualStyleBackColor = false;
@@ -121,7 +121,7 @@ namespace Project1 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(1200, 731);
+			this->ClientSize = System::Drawing::Size(1600, 900);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox3);
