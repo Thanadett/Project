@@ -146,8 +146,9 @@ namespace Project1 {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->BackColor = System::Drawing::Color::White;
+			this->label2->BackColor = System::Drawing::Color::WhiteSmoke;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
+			this->label2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"label2.Image")));
 			this->label2->Location = System::Drawing::Point(76, 132);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(441, 31);
@@ -158,6 +159,7 @@ namespace Project1 {
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
+			this->label3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"label3.Image")));
 			this->label3->Location = System::Drawing::Point(76, 229);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(354, 31);
@@ -197,6 +199,7 @@ namespace Project1 {
 			// checkBox1
 			// 
 			this->checkBox1->AutoSize = true;
+			this->checkBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"checkBox1.BackgroundImage")));
 			this->checkBox1->Location = System::Drawing::Point(82, 191);
 			this->checkBox1->Name = L"checkBox1";
 			this->checkBox1->Size = System::Drawing::Size(36, 20);
@@ -207,6 +210,7 @@ namespace Project1 {
 			// checkBox2
 			// 
 			this->checkBox2->AutoSize = true;
+			this->checkBox2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"checkBox2.BackgroundImage")));
 			this->checkBox2->Location = System::Drawing::Point(176, 191);
 			this->checkBox2->Name = L"checkBox2";
 			this->checkBox2->Size = System::Drawing::Size(36, 20);
@@ -217,6 +221,7 @@ namespace Project1 {
 			// checkBox3
 			// 
 			this->checkBox3->AutoSize = true;
+			this->checkBox3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"checkBox3.BackgroundImage")));
 			this->checkBox3->Location = System::Drawing::Point(265, 191);
 			this->checkBox3->Name = L"checkBox3";
 			this->checkBox3->Size = System::Drawing::Size(36, 20);
@@ -227,6 +232,7 @@ namespace Project1 {
 			// checkBox4
 			// 
 			this->checkBox4->AutoSize = true;
+			this->checkBox4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"checkBox4.BackgroundImage")));
 			this->checkBox4->Location = System::Drawing::Point(355, 191);
 			this->checkBox4->Name = L"checkBox4";
 			this->checkBox4->Size = System::Drawing::Size(36, 20);
@@ -237,6 +243,7 @@ namespace Project1 {
 			// checkBox5
 			// 
 			this->checkBox5->AutoSize = true;
+			this->checkBox5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"checkBox5.BackgroundImage")));
 			this->checkBox5->Location = System::Drawing::Point(453, 191);
 			this->checkBox5->Name = L"checkBox5";
 			this->checkBox5->Size = System::Drawing::Size(36, 20);
@@ -247,6 +254,7 @@ namespace Project1 {
 			// checkBox6
 			// 
 			this->checkBox6->AutoSize = true;
+			this->checkBox6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"checkBox6.BackgroundImage")));
 			this->checkBox6->Location = System::Drawing::Point(548, 191);
 			this->checkBox6->Name = L"checkBox6";
 			this->checkBox6->Size = System::Drawing::Size(36, 20);
@@ -652,6 +660,7 @@ namespace Project1 {
 			this->Name = L"MainTest";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MainTest";
+			this->Load += gcnew System::EventHandler(this, &MainTest::MainTest_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -719,5 +728,7 @@ namespace Project1 {
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();
 	}
+private: System::Void MainTest_Load(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
