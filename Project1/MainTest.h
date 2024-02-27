@@ -34,7 +34,7 @@ namespace Project1 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^ label1;
+
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label4;
@@ -95,7 +95,7 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->label1 = (gcnew System::Windows::Forms::Label());
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MainTest::typeid));
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
@@ -143,19 +143,10 @@ namespace Project1 {
 			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20));
-			this->label1->Location = System::Drawing::Point(431, 39);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(377, 39);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"แบบทดสอบสุขภาพทางจิตใจ";
-			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
+			this->label2->BackColor = System::Drawing::Color::White;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
 			this->label2->Location = System::Drawing::Point(76, 132);
 			this->label2->Name = L"label2";
@@ -609,6 +600,8 @@ namespace Project1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1205, 647);
 			this->Controls->Add(this->label14);
 			this->Controls->Add(this->label13);
@@ -655,7 +648,6 @@ namespace Project1 {
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
-			this->Controls->Add(this->label1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Name = L"MainTest";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;

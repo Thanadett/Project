@@ -124,6 +124,7 @@ namespace Project1 {
 			this->Name = L"MainPeriod";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MainPeriod";
+			this->Load += gcnew System::EventHandler(this, &MainPeriod::MainPeriod_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -148,6 +149,8 @@ namespace Project1 {
 		resultMessage += "วันที่ที่รอบเดือนจะมาตามกำหนดคือ : " + thatday + "/" + thatmonth + "/" + thatyear;
 
 		MessageBox::Show(resultMessage, "ผลลัพธ์", MessageBoxButtons::OK);
+}
+private: System::Void MainPeriod_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
