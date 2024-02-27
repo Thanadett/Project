@@ -77,9 +77,9 @@ namespace Project1 {
 			this->button1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.BackgroundImage")));
 			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->button1->ImageAlign = System::Drawing::ContentAlignment::BottomRight;
-			this->button1->Location = System::Drawing::Point(149, 89);
+			this->button1->Location = System::Drawing::Point(208, 158);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(309, 178);
+			this->button1->Size = System::Drawing::Size(394, 214);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Search Medicine";
 			this->button1->UseVisualStyleBackColor = false;
@@ -88,7 +88,7 @@ namespace Project1 {
 			// button2
 			// 
 			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
-			this->button2->Location = System::Drawing::Point(899, 469);
+			this->button2->Location = System::Drawing::Point(1297, 731);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(238, 100);
 			this->button2->TabIndex = 1;
@@ -99,9 +99,9 @@ namespace Project1 {
 			// button3
 			// 
 			this->button3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.BackgroundImage")));
-			this->button3->Location = System::Drawing::Point(556, 78);
+			this->button3->Location = System::Drawing::Point(750, 127);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(139, 75);
+			this->button3->Size = System::Drawing::Size(170, 100);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"BMI";
 			this->button3->UseVisualStyleBackColor = false;
@@ -110,9 +110,9 @@ namespace Project1 {
 			// button4
 			// 
 			this->button4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button4.BackgroundImage")));
-			this->button4->Location = System::Drawing::Point(781, 78);
+			this->button4->Location = System::Drawing::Point(1046, 127);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(137, 75);
+			this->button4->Size = System::Drawing::Size(170, 100);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"Period";
 			this->button4->UseVisualStyleBackColor = false;
@@ -121,9 +121,9 @@ namespace Project1 {
 			// button5
 			// 
 			this->button5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button5.BackgroundImage")));
-			this->button5->Location = System::Drawing::Point(1000, 78);
+			this->button5->Location = System::Drawing::Point(1348, 127);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(146, 75);
+			this->button5->Size = System::Drawing::Size(170, 100);
 			this->button5->TabIndex = 4;
 			this->button5->Text = L"Calories";
 			this->button5->UseVisualStyleBackColor = false;
@@ -132,9 +132,9 @@ namespace Project1 {
 			// button6
 			// 
 			this->button6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button6.BackgroundImage")));
-			this->button6->Location = System::Drawing::Point(556, 248);
+			this->button6->Location = System::Drawing::Point(750, 382);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(139, 75);
+			this->button6->Size = System::Drawing::Size(170, 100);
 			this->button6->TabIndex = 5;
 			this->button6->Text = L"Drepression Test";
 			this->button6->UseVisualStyleBackColor = false;
@@ -144,7 +144,7 @@ namespace Project1 {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
-			this->label1->Location = System::Drawing::Point(808, 248);
+			this->label1->Location = System::Drawing::Point(1052, 382);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(42, 20);
 			this->label1->TabIndex = 6;
