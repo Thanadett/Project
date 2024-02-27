@@ -40,11 +40,11 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::TextBox^ textBox2;
-	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Label^ label2;
+
+
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::TextBox^ textBox3;
-	private: System::Windows::Forms::Label^ label3;
+
 	private: System::Windows::Forms::Button^ button3;
 
 
@@ -67,22 +67,22 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MainBmi::typeid));
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(23, 544);
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->button2->Location = System::Drawing::Point(53, 789);
+			this->button2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(93, 40);
+			this->button2->Size = System::Drawing::Size(169, 61);
 			this->button2->TabIndex = 7;
 			this->button2->Text = L"Back";
 			this->button2->UseVisualStyleBackColor = true;
@@ -90,49 +90,32 @@ namespace Project1 {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox1->Location = System::Drawing::Point(225, 247);
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24));
+			this->textBox1->Location = System::Drawing::Point(348, 450);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(181, 38);
+			this->textBox1->Size = System::Drawing::Size(334, 44);
 			this->textBox1->TabIndex = 8;
+			this->textBox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox2->Location = System::Drawing::Point(778, 247);
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24));
+			this->textBox2->Location = System::Drawing::Point(927, 450);
+			this->textBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(181, 38);
+			this->textBox2->Size = System::Drawing::Size(326, 44);
 			this->textBox2->TabIndex = 9;
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->label1->Location = System::Drawing::Point(219, 171);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(216, 31);
-			this->label1->TabIndex = 10;
-			this->label1->Text = L"ส่วนสูง (เซนติเมตร)";
-			this->label1->Click += gcnew System::EventHandler(this, &MainBmi::label1_Click);
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->label2->Location = System::Drawing::Point(772, 171);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(198, 31);
-			this->label2->TabIndex = 11;
-			this->label2->Text = L"น้ำหนัก (กิโลกรัม)";
-			this->label2->Click += gcnew System::EventHandler(this, &MainBmi::label2_Click);
+			this->textBox2->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(379, 362);
+			this->button1->Location = System::Drawing::Point(409, 642);
+			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(143, 54);
+			this->button1->Size = System::Drawing::Size(193, 44);
 			this->button1->TabIndex = 12;
 			this->button1->Text = L"คำนวณ BMI";
 			this->button1->UseVisualStyleBackColor = true;
@@ -140,31 +123,21 @@ namespace Project1 {
 			// 
 			// textBox3
 			// 
-			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->textBox3->Location = System::Drawing::Point(490, 70);
+			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24));
+			this->textBox3->Location = System::Drawing::Point(582, 244);
+			this->textBox3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(275, 38);
+			this->textBox3->Size = System::Drawing::Size(556, 44);
 			this->textBox3->TabIndex = 13;
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(341, 76);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(111, 32);
-			this->label3->TabIndex = 14;
-			this->label3->Text = L"Name : ";
 			// 
 			// button3
 			// 
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button3->Location = System::Drawing::Point(660, 362);
+			this->button3->Location = System::Drawing::Point(927, 642);
+			this->button3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(143, 54);
+			this->button3->Size = System::Drawing::Size(191, 44);
 			this->button3->TabIndex = 12;
 			this->button3->Text = L"ประวัติ";
 			this->button3->UseVisualStyleBackColor = true;
@@ -172,19 +145,20 @@ namespace Project1 {
 			// 
 			// MainBmi
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1600, 900);
 			this->Controls->Add(this->button3);
-			this->Controls->Add(this->label3);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->button1);
-			this->Controls->Add(this->label2);
-			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->button2);
+			this->DoubleBuffered = true;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"MainBmi";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"    ";

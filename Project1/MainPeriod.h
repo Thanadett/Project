@@ -42,6 +42,7 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
 
+
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -66,32 +67,36 @@ namespace Project1 {
 			// textBox1
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox1->Location = System::Drawing::Point(438, 309);
+			this->textBox1->Location = System::Drawing::Point(434, 340);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(88, 38);
+			this->textBox1->Size = System::Drawing::Size(123, 32);
 			this->textBox1->TabIndex = 0;
 			// 
 			// textBox2
 			// 
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox2->Location = System::Drawing::Point(652, 309);
+			this->textBox2->Location = System::Drawing::Point(615, 340);
+			this->textBox2->Margin = System::Windows::Forms::Padding(2);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(88, 38);
+			this->textBox2->Size = System::Drawing::Size(132, 32);
 			this->textBox2->TabIndex = 1;
 			// 
 			// textBox3
 			// 
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
-			this->textBox3->Location = System::Drawing::Point(815, 309);
+			this->textBox3->Location = System::Drawing::Point(788, 340);
+			this->textBox3->Margin = System::Windows::Forms::Padding(2);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(88, 38);
+			this->textBox3->Size = System::Drawing::Size(165, 32);
 			this->textBox3->TabIndex = 2;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(615, 425);
+			this->button1->Location = System::Drawing::Point(626, 474);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(90, 36);
+			this->button1->Size = System::Drawing::Size(104, 48);
 			this->button1->TabIndex = 3;
 			this->button1->Text = L"ยืนยัน";
 			this->button1->UseVisualStyleBackColor = true;
@@ -99,28 +104,31 @@ namespace Project1 {
 			// 
 			// button2
 			// 
+			this->button2->BackColor = System::Drawing::Color::White;
 			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
-			this->button2->Location = System::Drawing::Point(963, 534);
+			this->button2->Location = System::Drawing::Point(935, 587);
+			this->button2->Margin = System::Windows::Forms::Padding(2);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 43);
+			this->button2->Size = System::Drawing::Size(79, 47);
 			this->button2->TabIndex = 4;
 			this->button2->Text = L"Back";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &MainPeriod::button2_Click);
 			// 
 			// MainPeriod
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(1600, 900);
+			this->ClientSize = System::Drawing::Size(1200, 731);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"MainPeriod";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MainPeriod";
@@ -152,5 +160,6 @@ namespace Project1 {
 }
 private: System::Void MainPeriod_Load(System::Object^ sender, System::EventArgs^ e) {
 }
+
 };
 }
