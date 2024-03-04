@@ -146,6 +146,7 @@ namespace Project1 {
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
+		
 		}
 #pragma endregion
 	private: System::Void MainForm_Load(System::Object^ sender, System::EventArgs^ e) {

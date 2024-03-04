@@ -4,6 +4,7 @@
 #include "MainPeriod.h"
 #include "MainTest.h"
 #include "MainCal.h"
+#include "randtx.h"
 
 namespace Project1 {
 
@@ -44,6 +45,7 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^ button6;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Timers::Timer^ timer;
+	private: System::Windows::Forms::Label^ label2;
 
 	protected:
 
@@ -68,6 +70,7 @@ namespace Project1 {
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -79,10 +82,10 @@ namespace Project1 {
 			this->button1->Cursor = System::Windows::Forms::Cursors::AppStarting;
 			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->button1->ImageAlign = System::Drawing::ContentAlignment::BottomRight;
-			this->button1->Location = System::Drawing::Point(194, 133);
-			this->button1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button1->Location = System::Drawing::Point(213, 151);
+			this->button1->Margin = System::Windows::Forms::Padding(6);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(435, 257);
+			this->button1->Size = System::Drawing::Size(373, 225);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Search Medicine";
 			this->button1->UseVisualStyleBackColor = false;
@@ -93,10 +96,11 @@ namespace Project1 {
 			this->button2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(244)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
 				static_cast<System::Int32>(static_cast<System::Byte>(229)));
 			this->button2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.BackgroundImage")));
-			this->button2->Location = System::Drawing::Point(1329, 708);
-			this->button2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
+			this->button2->Location = System::Drawing::Point(1258, 815);
+			this->button2->Margin = System::Windows::Forms::Padding(6);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(200, 130);
+			this->button2->Size = System::Drawing::Size(257, 70);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Exit";
 			this->button2->UseVisualStyleBackColor = false;
@@ -107,10 +111,11 @@ namespace Project1 {
 			this->button3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(244)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
 				static_cast<System::Int32>(static_cast<System::Byte>(229)));
 			this->button3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.BackgroundImage")));
-			this->button3->Location = System::Drawing::Point(743, 112);
-			this->button3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
+			this->button3->Location = System::Drawing::Point(1050, 110);
+			this->button3->Margin = System::Windows::Forms::Padding(6);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(180, 130);
+			this->button3->Size = System::Drawing::Size(168, 132);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"BMI";
 			this->button3->UseVisualStyleBackColor = false;
@@ -121,10 +126,11 @@ namespace Project1 {
 			this->button4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(244)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
 				static_cast<System::Int32>(static_cast<System::Byte>(229)));
 			this->button4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button4.BackgroundImage")));
-			this->button4->Location = System::Drawing::Point(1040, 112);
-			this->button4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
+			this->button4->Location = System::Drawing::Point(1353, 110);
+			this->button4->Margin = System::Windows::Forms::Padding(6);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(180, 130);
+			this->button4->Size = System::Drawing::Size(162, 132);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"Period";
 			this->button4->UseVisualStyleBackColor = false;
@@ -135,10 +141,11 @@ namespace Project1 {
 			this->button5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(244)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
 				static_cast<System::Int32>(static_cast<System::Byte>(229)));
 			this->button5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button5.BackgroundImage")));
-			this->button5->Location = System::Drawing::Point(1349, 112);
-			this->button5->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
+			this->button5->Location = System::Drawing::Point(744, 110);
+			this->button5->Margin = System::Windows::Forms::Padding(6);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(180, 130);
+			this->button5->Size = System::Drawing::Size(177, 132);
 			this->button5->TabIndex = 4;
 			this->button5->Text = L"Calories";
 			this->button5->UseVisualStyleBackColor = false;
@@ -149,10 +156,11 @@ namespace Project1 {
 			this->button6->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(244)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
 				static_cast<System::Int32>(static_cast<System::Byte>(229)));
 			this->button6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button6.BackgroundImage")));
-			this->button6->Location = System::Drawing::Point(743, 366);
-			this->button6->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14));
+			this->button6->Location = System::Drawing::Point(744, 372);
+			this->button6->Margin = System::Windows::Forms::Padding(6);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(180, 130);
+			this->button6->Size = System::Drawing::Size(177, 123);
 			this->button6->TabIndex = 5;
 			this->button6->Text = L"Drepression Test";
 			this->button6->UseVisualStyleBackColor = false;
@@ -161,21 +169,35 @@ namespace Project1 {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
-			this->label1->Location = System::Drawing::Point(1036, 366);
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18));
+			this->label1->Location = System::Drawing::Point(1061, 372);
+			this->label1->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(42, 20);
+			this->label1->Size = System::Drawing::Size(61, 29);
 			this->label1->TabIndex = 6;
 			this->label1->Text = L"Tip :";
 			this->label1->Click += gcnew System::EventHandler(this, &MainApp::label1_Click);
 			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
+			this->label2->Location = System::Drawing::Point(1061, 435);
+			this->label2->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(0, 26);
+			this->label2->TabIndex = 7;
+			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label2->Text = RandTextGenerator::getRandomMessage();
+			// 
 			// MainApp
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(19, 37);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1600, 900);
+			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
@@ -184,8 +206,9 @@ namespace Project1 {
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->DoubleBuffered = true;
+			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24));
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
-			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->Margin = System::Windows::Forms::Padding(6);
 			this->Name = L"MainApp";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MainApp";

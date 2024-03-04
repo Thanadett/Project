@@ -117,14 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="button1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPYAAACTCAYAAAC9K+QhAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAAbJJREFUeF7t06ERACAMADH237MShy97/EVkhJx3Z4EWsSFIbAgSG4LEhiCxIUhs
+        cQAAEnEB89x6jgAAAbJJREFUeF7t06ERACAMADH237MShy97/EVkhJx3Z4EWsSFIbAgSG4LEhiCxIUhs
         CBIbgsSGILEhSGwIEhuCxIYgsSFIbAgSG4LEhiCxIUhsCBIbgsSGILEhSGwIEhuCxIYgsSFIbAgSG4LE
         hiCxIUhsCBIbgsSGILEhSGwIEhuCxIYgsSFIbAgSG4LEhiCxIUhsCBIbgsSGILEhSGwIEhuCxIYgsSFI
         bAgSG4LEhiCxIUhsCBIbgsSGILEhSGwIEhuCxIYgsSFIbAgSG4LEhiCxIUhsCBIbgsSGILEhSGwIEhuC
@@ -134,9 +131,6 @@
         IUhsCBIbgsSGILEhSGwIEhuCxIYgsSFIbMiZ/fw9mPc5oIZTAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="button2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
@@ -2719,9 +2713,6 @@
         AP/OHyPU/Q9/md/iAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="button3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
@@ -5304,9 +5295,6 @@
         AP/OHyPU/Q9/md/iAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="button4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="button4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
@@ -7889,9 +7877,6 @@
         AP/OHyPU/Q9/md/iAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="button5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="button5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
@@ -10474,9 +10459,6 @@
         AP/OHyPU/Q9/md/iAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="button6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="button6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
@@ -13059,12 +13041,6 @@
         AP/OHyPU/Q9/md/iAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s

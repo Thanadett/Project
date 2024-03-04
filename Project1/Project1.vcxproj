@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="randtx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BMI.h" />
